@@ -13,9 +13,8 @@ Karl Pearson's Correlation Coefficient is a measure of the strength and directio
 **Use When:** Input values are small.
 
 **Formula:**
-$$
-\text{cov}(x, y) = \left(\frac{\Sigma(xy)}{n}\right) - (\bar{x} \cdot \bar{y})
-$$
+
+$$\text{cov}(x, y) = \left(\frac{\Sigma(xy)}{n}\right) - (\bar{x} \cdot \bar{y})$$
 
 $$
 \sigma_x = \sqrt{\frac{\Sigma(x^2)}{n}}
@@ -30,9 +29,8 @@ $$
 **Use When:** Input values may vary.
 
 **Formula:**
-$$
-\text{cov}(x, y) = \frac{\Sigma(x - \bar{x})(y - \bar{y})}{n}
-$$
+
+$$\text{cov}(x, y) = \frac{\Sigma(x - \bar{x})(y - \bar{y})}{n}$$
 
 $$
 \sigma_x = \sqrt{\frac{\Sigma(x - \bar{x})^2}{n}}
@@ -47,9 +45,8 @@ $$
 **Use When:** Mean values are floating point numbers.
 
 **Formula:**
-$$
-\text{cov}(x, y) = \left(\frac{\Sigma(dx \cdot dy)}{n}\right) - \left(\frac{\Sigma(dx)}{n} \cdot \frac{\Sigma(dy)}{n}\right)
-$$
+
+$$\text{cov}(x, y) = \left(\frac{\Sigma(dx \cdot dy)}{n}\right) - \left(\frac{\Sigma(dx)}{n} \cdot \frac{\Sigma(dy)}{n}\right)$$
 
 $$
 \sigma_x = \sqrt{\left(\frac{\Sigma(dx^2)}{n}\right) - \left(\frac{\Sigma(dx)}{n}\right)^2}
