@@ -16,10 +16,10 @@ if mean_x.is_integer() and mean_y.is_integer():
     direct_method = True
 
     for i in range(n):
-        if x[i] > 10 or y[i] > 10:
+        if x[i] > 20 or y[i] > 20:
             direct_method = False
             break
-    
+
     if direct_method:
         print("Direct Method\n")
 
