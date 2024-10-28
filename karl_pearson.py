@@ -1,6 +1,11 @@
 import pandas as pd
 from math import sqrt
 
+def print_title(title: str) -> None:
+    print(" " + "-" * len(title))
+    print("|" + title + "|")
+    print(" " + "-" * len(title) + "\n")
+
 x = list(map(int, input("Enter X: ").split()))
 y = list(map(int, input("Enter Y: ").split()))
 
@@ -21,7 +26,7 @@ if mean_x.is_integer() and mean_y.is_integer():
             break
 
     if direct_method:
-        print("Direct Method\n")
+        print_title("Direct Method")
 
         df["x²"] = df["x"] ** 2
         df["y²"] = df["y"] ** 2
@@ -58,7 +63,7 @@ if mean_x.is_integer() and mean_y.is_integer():
         print(f"r = {covariance} / ({sigma_x} * {sigma_y})")
         print(f"r = {r}")
     else:
-        print("Deviation from Mean Method\n")
+        print_title("Deviation from Mean Method")
 
         df["x-x̄"] = df["x"] - mean_x
         df["y-ȳ"] = df["y"] - mean_y
@@ -99,7 +104,7 @@ if mean_x.is_integer() and mean_y.is_integer():
         print(f"r = {covariance} / ({sigma_x} * {sigma_y})")
         print(f"r = {r}")
 else:
-    print("Assumed Mean Method\n")
+    print_title("Assumed Mean Method")
     
     a = round(mean_x)
     b = round(mean_y)
